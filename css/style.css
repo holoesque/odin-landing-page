@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+
+.hero,
+.footer {
+  background-color: #1f2937;
+}
