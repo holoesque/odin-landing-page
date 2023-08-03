@@ -1,3 +1,11 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -7,11 +15,108 @@ ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
 
+button {
+  border-radius: 10%;
+  border: none;
+}
+
+.hero,
+.information,
+.quote-container,
+.ad-container,
+.footer {
+  padding: 0 25rem;
+}
+
+/* hero section */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.header .links {
+  display: flex;
+  gap: 12px;
+}
+
+.links,
+.hero-sec {
+  font-size: 18px;
+}
 
 .hero,
 .footer {
   background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
 }
+
+.hero-container {
+  display: flex;
+  padding: 5rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 10rem 0 0 ;
+}
+
+.hero-main {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.hero-sec {
+  color: #f9faf8;
+  font-weight: 300;
+}
+
+.hero-button {
+  align-self: flex-start;
+  background-color: #3882f6;
+  padding: 0.2rem 0.75rem;
+  color: #f9faf8;
+}
+
+/* info and image section */
+.information .title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+
+/* quote secion */
+.quote-container {
+  background-color: #e5e7eb;
+}
+
+.quote-container .quote {
+  font-style: italic;
+  font-size: 36px;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.quote-container .person {
+  font-size: 36px;
+  font-weight: 500;
+}
+
