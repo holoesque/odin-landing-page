@@ -28,6 +28,10 @@ button {
   border: none;
 }
 
+img {
+  border-radius: 10%;
+}
+
 .hero,
 .information,
 .quote-container,
@@ -96,11 +100,37 @@ button {
   color: #f9faf8;
 }
 
+#main-pic {
+  border-radius: 0;
+}
+
 /* info and image section */
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .information .title {
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
+  padding: 3rem 0;
+}
+
+.information .images {
+  display: flex;
+  padding: 0 0 3rem 0;
+}
+
+.information .images .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
 }
 
 /* quote secion */
